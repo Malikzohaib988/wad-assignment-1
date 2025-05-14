@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Cs by Zohaib</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#065f46',
+                        secondary: '#047857',
+                        accent: '#db2777',
+                        lightbg: '#fce7f3',
+                        lightaccent: '#a7f3d0',
+                        navbg: '#10b981'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-lightbg text-gray-800 font-sans leading-relaxed">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header for larger screens -->
+        <header class="bg-primary text-white p-4 text-center hidden md:block">
+            <h1 class="text-4xl text-white mb-2">Department of Computer Sciences</h1>
+            <p>Quaid-i-Azam University, Islamabad</p>
+        </header>
+
+        <!-- Navigation for larger screens -->
+        <nav class="bg-navbg p-2 text-center hidden md:block">
+            <ul class="flex justify-center space-x-4">
+                <li><a href="index.html" class="text-white no-underline hover:underline">Home</a></li>
+                <li><a href="acadamics.html" class="text-white no-underline hover:underline">Academics</a></li>
+                <li><a href="research.html" class="text-white no-underline hover:underline">Research</a></li>
+                <li><a href="project.html" class="text-white no-underline hover:underline">Funded Projects</a></li>
+                <li><a href="addmision.html" class="text-white no-underline hover:underline">Admissions</a></li>
+                <li><a href="faculty.html" class="text-white no-underline hover:underline">Faculty</a></li>
+                <li><a href="https://gdg.community.dev/quaid-i-azam-university/" class="text-white no-underline hover:underline">Google GDSC</a></li>
+                <li><a href="https://jobs.qau.edu.pk/" class="text-white no-underline hover:underline">Jobs</a></li>
+                <li><a href="http://alumni.cs.qau.edu.pk/" class="text-white no-underline hover:underline">Alumni</a></li>
+                <li><a href="https://qau.edu.pk/" class="text-white no-underline hover:underline">QAU</a></li>
+                <li><a href="contact.html" class="text-white no-underline hover:underline">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile header and menu -->
+        <div class="md:hidden">
+            <header class="bg-primary text-white p-4 text-center">
+                <h2 class="text-2xl text-white mb-2">Department of Computer Sciences</h2>
+                <p>Quaid-i-Azam University, Islamabad</p>
+            </header>
+            <nav class="bg-navbg p-2 text-center">
+                <details class="relative">
+                    <summary class="text-white cursor-pointer"><span>Menu</span></summary>
+                    <ul class="absolute left-0 right-0 bg-white shadow-md z-10 text-left p-2 space-y-2">
+                        <li><a href="index.html" class="text-accent block p-2 hover:bg-gray-100">Home</a></li>
+                        <li><a href="acadamics.html" class="text-accent block p-2 hover:bg-gray-100">Academics</a></li>
+                        <li><a href="research.html" class="text-accent block p-2 hover:bg-gray-100">Research</a></li>
+                        <li><a href="project.html" class="text-accent block p-2 hover:bg-gray-100">Funded Projects</a></li>
+                        <li><a href="addmision.html" class="text-accent block p-2 hover:bg-gray-100">Admissions</a></li>
+                        <li><a href="faculty.html" class="text-accent block p-2 hover:bg-gray-100">Faculty</a></li>
+                        <li><a href="https://gdg.community.dev/quaid-i-azam-university/" class="text-accent block p-2 hover:bg-gray-100">Google GDSC</a></li>
+                        <li><a href="https://jobs.qau.edu.pk/" class="text-accent block p-2 hover:bg-gray-100">Jobs</a></li>
+                        <li><a href="http://alumni.cs.qau.edu.pk/" class="text-accent block p-2 hover:bg-gray-100">Alumni</a></li>
+                        <li><a href="https://qau.edu.pk/" class="text-accent block p-2 hover:bg-gray-100">QAU</a></li>
+                        <li><a href="contact.html" class="text-accent block p-2 hover:bg-gray-100">Contact us</a></li>
+                    </ul>
+                </details>
+            </nav>
+        </div>
+
+        <!-- Main content -->
+        <main class="flex-grow p-4 md:p-8">
+            <div class="mb-8 text-center">
+                <h3 class="text-3xl text-secondary font-bold italic mb-4">Funded Projects</h3>
+                <p class="text-lg">
+                    We are pleased to announce that the following multiple fundings <br class="hidden md:block"/>
+                    have been received by the respected faculty members of the department.
+                </p>
+            </div>
+
+            <!-- Projects grid -->
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Project 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl text-secondary font-bold italic mb-3">Project Title: Optimizing Model Inference and Coverage in Learning-based Testing (OMICoLT)</h4>
+                    <p class="text-gray-700">
+                        PI: Dr. Muddassar Azam Sindhu<br/>
+                        Co-PI: Dr. Onaiza Maqbool<br/>
+                        Graduate Students: Farah Haneef (PhD student), Hafiz Abdul Quddus (MPhil Student for 1st Year of Project)<br/>
+                        Funding Amount: PKR 2.1 Million<br/>
+                        Funding Agency: HEC<br/>
+                        Duration: 3 Years<br/>
+                        Start Date: July 1, 2020<br/>
+                        End Date: June 30, 2023
+                    </p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h5 class="text-xl text-secondary font-bold italic mb-3">Project Title: Vehicle Number Plate Identification System</h5>
+                    <p class="text-gray-700">
+                        PI: Dr. Muddassar Azam Sindhu<br/>
+                        Undergrad Student: Fizza<br/>
+                        Funding Amount: PKR .06 Million<br/>
+                        Funding Agency: IGNITE<br/>
+                        Duration: 1 year<br/>
+                        Start Date: August, 2019<br/>
+                        End Date: July, 2020
+                    </p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h1 class="text-xl text-secondary font-bold italic mb-3">Project Title: Robot Platoon</h1>
+                    <p class="text-gray-700">
+                        PI: Dr. Muddassar Azam Sindhu<br/>
+                        Undergrad Student: Sadia Kalsoom<br/>
+                        Funding Amount: PKR .05 Million<br/>
+                        Funding Agency: IGNITE<br/>
+                        Duration: 1 year<br/>
+                        Start Date: August, 2019<br/>
+                        End Date: July, 2020
+                    </p>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl text-secondary font-bold italic mb-3">Project Title: Grievances Detection System</h2>
+                    <p class="text-gray-700">
+                        PI: Dr. Rabeeh Ayaz Abbasi<br/>
+                        Undergrad Student: Ghulam Farid<br/>
+                        Funding Amount: PKR .08 Million<br/>
+                        Funding Agency: IGNITE<br/>
+                        Duration: 1 year<br/>
+                        Start Date: August, 2019<br/>
+                        End Date: July, 2020
+                    </p>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl text-secondary font-bold italic mb-3">Project Title: A Personal Stress Monitoring and Relieving System</h3>
+                    <p class="text-gray-700">
+                        PI: Dr. Rabeeh Ayaz Abbasi<br/>
+                        Undergrad Student: Ibrar Younis Butt<br/>
+                        Funding Amount: PKR .08 Million<br/>
+                        Funding Agency: IGNITE<br/>
+                        Duration: 1 year<br/>
+                        Start Date: August, 2019<br/>
+                        End Date: July, 2020
+                    </p>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl text-secondary font-bold italic mb-3">Project Title: General Purpose Social Media Analytics</h4>
+                    <p class="text-gray-700">
+                        PI: Dr. Rabeeh Ayaz Abbasi<br/>
+                        Undergrad Student: Khuzama Muqeem<br/>
+                        Funding Amount: PKR .08 Million<br/>
+                        Funding Agency: IGNITE<br/>
+                        Duration: 1 year<br/>
+                        Start Date: August, 2019<br/>
+                        End Date: July, 2020
+                    </p>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h5 class="text-xl text-secondary font-bold italic mb-3">Project Title: Event Detection System</h5>
+                    <p class="text-gray-700">
+                        PI: Dr. Rabeeh Ayaz Abbasi<br/>
+                        Undergrad Student: Ahsan Sheraz<br/>
+                        Funding Amount: PKR .08 Million<br/>
+                        Funding Agency: IGNITE<br/>
+                        Duration: 1 year<br/>
+                        Start Date: August, 2018<br/>
+                        End Date: July, 2019
+                    </p>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h1 class="text-xl text-secondary font-bold italic mb-3">Project Title: Design and Analysis of Web Services Ranking Methods for Internet of Things</h1>
+                    <p class="text-gray-700">
+                        PI: Dr. Muhammad Usman<br/>
+                        Co-PI: Dr. Onaiza Maqbool<br/>
+                        Graduate Student: Aroosa Hameed<br/>
+                        Funding Amount: PKR 0.477 Million<br/>
+                        Funding Agency: HEC<br/>
+                        Duration: 1 Year<br/>
+                        Start Date: December 12, 2017<br/>
+                        End Date: December 11, 2018
+                    </p>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl text-secondary font-bold italic mb-3">Project Title: Code Vulnerability Scanner for C Language</h2>
+                    <p class="text-gray-700">
+                        PI: Dr. Muddassar Azam Sindhu<br/>
+                        Co-PIs: Dr. Onaiza Maqbool, Dr. Muhammad Usman<br/>
+                        Graduate Student: Younis Iqbal<br/>
+                        Undergrad Student: Wania Zafar<br/>
+                        Funding Amount: PKR 0.15 Million<br/>
+                        Funding Agency: Industry<br/>
+                        Duration: 6 months<br/>
+                        Start Date: October 17, 2017<br/>
+                        End Date: April 16, 2018
+                    </p>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl text-secondary font-bold italic mb-3">Project Title: Code Vulnerability Scanner for Java Language</h3>
+                    <p class="text-gray-700">
+                        PI: Dr. Muddassar Azam Sindhu<br/>
+                        Co-PIs: Dr. Onaiza Maqbool, Dr. Muhammad Usman<br/>
+                        Graduate Student: Shirjeel Ahmed<br/>
+                        Funding Amount: PKR 0.15 Million<br/>
+                        Funding Agency: Industry<br/>
+                        Duration: 6 months<br/>
+                        Start Date: October 17, 2017<br/>
+                        End Date: April 16, 2018
+                    </p>
+                </div>
+
+                <!-- Project 11 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h4 class="text-xl text-secondary font-bold italic mb-3">Project Title: Data Leak Prevention</h4>
+                    <p class="text-gray-700">
+                        PI: Dr. Muddassar Azam Sindhu<br/>
+                        Co-PIs: Dr. Onaiza Maqbool, Dr. Muhammad Usman<br/>
+                        Graduate Student: Seema Raishad<br/>
+                        Undergrad Student: Danish Alam<br/>
+                        Funding Amount: PKR 0.15 Million<br/>
+                        Funding Agency: Industry<br/>
+                        Duration: 6 months<br/>
+                        Start Date: October 17, 2017<br/>
+                        End Date: April 16, 2018
+                    </p>
+                </div>
+
+                <!-- Project 12 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h5 class="text-xl text-secondary font-bold italic mb-3">Project Title: Improving Automata Learning for Learning-based Testing</h5>
+                    <p class="text-gray-700">
+                        PI: Dr. Muddassar Azam Sindhu<br/>
+                        Graduate Student: Rabia Mazhar, Anjum Ara<br/>
+                        Funding Amount: PKR 0.14 Million<br/>
+                        Funding Agency: QAU-University Research Fund<br/>
+                        Duration: 1 year<br/>
+                        Start Date: September 1, 2016<br/>
+                        End Date: August 31, 2017
+                    </p>
+                </div>
+
+                <!-- Project 13 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h1 class="text-xl text-secondary font-bold italic mb-3">Project Title: Application of Pervasive Computing in Garments Industry</h1>
+                    <p class="text-gray-700">
+                        PI: Dr. Rabeeh Ayaz Abbasi<br/>
+                        Student: Omar Aslam<br/>
+                        Funding Amount: PKR 0.14 Million<br/>
+                        Funding Agency: QAU-University Research Fund<br/>
+                        Duration: 1 year<br/>
+                        Start Date: September 1, 2014<br/>
+                        End Date: August 31, 2015
+                    </p>
+                </div>
+
+                <!-- Project 14 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-xl text-secondary font-bold italic mb-3">Project Title: Farmers Field-School Data Capturing and Analysis for Optimal Usage of Pesticide</h2>
+                    <p class="text-gray-700">
+                        PI: Dr. Khalid Saleem<br/>
+                        Graduate Student: Irfan Ali Shah<br/>
+                        Funding Amount: PKR 0.06 Million<br/>
+                        Funding Agency: QAU-University Research Fund<br/>
+                        Duration: 1 year<br/>
+                        Start Date: September 1, 2011<br/>
+                        End Date: August 31, 2012
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-primary text-white p-4 text-center">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="text-left">
+                        <h3 class="text-xl font-bold mb-4">Useful links</h3>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <a href="http://www.qau.edu.pk/" target="QAU" class="bg-white text-primary px-3 py-1 rounded-full text-sm font-semibold">QAU</a>
+                            <a href="admissions.php" class="bg-white text-primary px-3 py-1 rounded-full text-sm font-semibold">Admissions</a>
+                            <a href="contactUs.php" class="bg-white text-primary px-3 py-1 rounded-full text-sm font-semibold">Contact</a>
+                        </div>
+                        <address class="not-italic">
+                            <strong>Department of Computer Sciences,</strong> <br/>
+                            <strong>Quaid-i-Azam University,</strong> <br/>
+                            Islamabad, 45320, Pakistan <br/>
+                            Tel : +92 (051) 9064-2057
+                        </address>
+                    </div>
+                    <div class="text-left">
+                        <h4 class="text-xl font-bold mb-4">Our Programs</h4>
+                        <ul class="space-y-2">
+                            <li><a href="Phd.php" class="text-white hover:underline">PhD (Computer Science)</a></li>
+                            <li><a href="ms.php" class="text-white hover:underline">MS (Information Science &amp; Technology)</a></li>
+                            <li><a href="mphil.php" class="text-white hover:underline">MPhil (Computer Science)</a></li>
+                            <li><a href="ms-ds.php" class="text-white hover:underline">MS (Data Science)</a></li>
+                            <li><a href="Bs.php" class="text-white hover:underline">BS (Computer Science)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 pt-4 border-t border-gray-300">
+                    <p>2025 © Department of Computer Sciences, QAU, Islamabad</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

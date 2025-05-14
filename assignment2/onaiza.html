@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Cs Qau</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#065f46',
+                        secondary: '#047857',
+                        accent: '#db2777',
+                        lightbg: '#fce7f3',
+                        lightaccent: '#a7f3d0',
+                        navbg: '#10b981',
+                    },
+                    fontFamily: {
+                        'sans': ['Segoe UI', 'Tahoma', 'Geneva', 'Verdana', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer components {
+            .navbar li {
+                @apply inline-block mx-2;
+            }
+            .footer-label {
+                @apply inline-block px-3 py-1 mb-2 mr-2 text-white bg-primary rounded;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-lightbg text-gray-800 leading-relaxed">
+<div class="max-w-7xl mx-auto">
+    <!-- Desktop Header/Nav -->
+    <div class="hidden md:block">
+        <header class="bg-primary text-white p-4 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold">Department of Computer Sciences</h1>
+            <p>Quaid-i-Azam University, Islamabad</p>
+        </header>
+        <nav class="bg-navbg p-2 text-center">
+            <ul class="navbar">
+                <li><a href="index.html" class="text-white hover:underline">Home</a></li>
+                <li><a href="acadamics.html" class="text-white hover:underline">Academics</a></li>
+                <li><a href="research.html" class="text-white hover:underline">Research</a></li>
+                <li><a href="project.html" class="text-white hover:underline">Funded Projects</a></li>
+                <li><a href="addmision.html" class="text-white hover:underline">Admissions</a></li>
+                <li><a href="faculty.html" class="text-white hover:underline">Faculty</a></li>
+                <li><a href="https://gdg.community.dev/quaid-i-azam-university/" class="text-white hover:underline">Google GDSC</a></li>
+                <li><a href="https://jobs.qau.edu.pk/" class="text-white hover:underline">Jobs</a></li>
+                <li><a href="http://alumni.cs.qau.edu.pk/" class="text-white hover:underline">Alumni</a></li>
+                <li><a href="https://qau.edu.pk/" class="text-white hover:underline">QAU</a></li>
+                <li><a href="contact.html" class="text-white hover:underline">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Mobile Header/Nav -->
+    <div class="md:hidden">
+        <header class="bg-primary text-white p-4 text-center">
+            <h2 class="text-2xl font-bold">Department of Computer Sciences</h2>
+            <p>Quaid-i-Azam University, Islamabad</p>
+        </header>
+        <nav class="bg-navbg p-2 text-center">
+            <details>
+                <summary class="text-white cursor-pointer"><span>Menu</span></summary>
+                <ul class="navbar block">
+                    <li class="block my-1"><a href="index.html" class="text-white hover:underline">Home</a></li>
+                    <li class="block my-1"><a href="acadamics.html" class="text-white hover:underline">Academics</a></li>
+                    <li class="block my-1"><a href="research.html" class="text-white hover:underline">Research</a></li>
+                    <li class="block my-1"><a href="project.html" class="text-white hover:underline">Funded Projects</a></li>
+                    <li class="block my-1"><a href="addmision.html" class="text-white hover:underline">Admissions</a></li>
+                    <li class="block my-1"><a href="faculty.html" class="text-white hover:underline">Faculty</a></li>
+                    <li class="block my-1"><a href="https://gdg.community.dev/quaid-i-azam-university/" class="text-white hover:underline">Google GDSC</a></li>
+                    <li class="block my-1"><a href="https://jobs.qau.edu.pk/" class="text-white hover:underline">Jobs</a></li>
+                    <li class="block my-1"><a href="http://alumni.cs.qau.edu.pk/" class="text-white hover:underline">Alumni</a></li>
+                    <li class="block my-1"><a href="https://qau.edu.pk/" class="text-white hover:underline">QAU</a></li>
+                    <li class="block my-1"><a href="contact.html" class="text-white hover:underline">Contact us</a></li>
+                </ul>
+            </details>
+        </nav>
+    </div>
+
+    <!-- Profile Header -->
+    <div class="p-4">
+        <div class="text-center">
+            <h3 class="text-2xl font-bold">Onaiza Maqbool</h3>
+            <p>Department of Computer Sciences</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="p-4 md:p-6">
+        <h4 class="text-2xl font-bold mb-4">Onaiza Maqbool</h4>
+        <div class="flex flex-col md:flex-row gap-6">
+            <div class="md:w-4/5">
+                <h5 class="text-xl font-semibold mb-2">Professor (Tenured)</h5>
+                <p>HEC Approved Supervisor</p>
+                <p class="my-2">📧 <a href="mailto:onaiza@qau.edu.pk" class="text-accent hover:underline">onaiza-at-qau-edu-pk</a></p>
+                <p>☎ +92-51-9064-2060</p>
+                <p>📯 Dept. of Computer Science, <br/>
+                     Quaid-i-Azam University,<br/>
+                Islamabad, Pakistan</p>
+                
+                <div class="my-4">
+                    <a href="https://scholar.google.com/citations?user=kmGxSRAAAAAJ" class="inline-block mr-4">
+                        <img alt="Google Scholar" border="0" height="40" src="google-scholar.png" title="Google Scholar" width="59"/>
+                    </a>
+                    <a href="https://dblp.org/pid/88/5854" class="inline-block mr-4">
+                        <img alt="DBLP" border="0" height="40" src="dblp.png" title="DBLP" width="39"/>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Onaiza_Maqbool" class="inline-block">
+                        <img alt="Research Gate" border="0" height="40" src="research-gate.png" title="Research Gate" width="37"/>
+                    </a>
+                </div>
+
+                <div class="my-6">
+                    <a href="#Research_Publications" class="text-accent hover:underline">Research Publications</a> | 
+                    <a href="#Projects" class="text-accent hover:underline">Funded Projects</a> | 
+                    <a href="#PhD_Students" class="text-accent hover:underline">PhD Students</a> |
+                    <a href="#MPhil_Theses_Supervised" class="text-accent hover:underline">MPhil/MS Students</a> |
+                    <a href="#MSc_Projects_Supervised (Since 2010)" class="text-accent hover:underline">BS/MSc Students</a>
+                </div>
+
+                <h1 class="text-3xl font-bold text-primary my-4">Research Interests</h1>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>Software (Re)Engineering</li>
+                    <li>Software Architecture Reovery</li>
+                    <li>Machine Learning</li>
+                </ul>
+
+                <h2 class="text-2xl font-bold text-secondary my-4">Teaching</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div>
+                        <h3 class="font-semibold">BS / MSc</h3>
+                        <ul class="list-disc pl-6">
+                            <li>Introduction to Software Engineering</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Software Engineering</li>
+                            <li>Software Engineering Practicum</li>
+                            <li>Introduction to Computing Theory</li>
+                            <li>Analysis and Design for Software Systems</li>
+                            <li>Software Construction</li>
+                            <li>Theory of Automata</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold">MS / MPhil / PhD</h3>
+                        <ul class="list-disc pl-6">
+                            <li>Advanced Analysis of Algorithms</li>
+                            <li>Machine Learning</li>
+                            <li>Data Mining</li>
+                            <li>Knowledge Representation and Reasoning</li>
+                            <li>Pattern Recognition</li>
+                            <li>Software Architectures</li>
+                            <li>Software Evolution and Reengineering</li>
+                            <li>Software Repositories Mining</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold text-secondary my-4" id="Research_Publications">Research Publications</h3>
+                <h4 class="text-xl font-semibold my-3">Journal</h4>
+                <ol class="list-decimal pl-6 space-y-2">
+                    <li>Farooq Zaman, Onaiza Maqbool, Jaweria Kanwal, "Leveraging Bidirectional LSTM with CRFs for Pashto tagging", ACM Transactions on Asian and Low-Resource Language Information Processing, Vol 23(4): 1-17, 2024 </li>
+                    <li>Jaweria Kanwal, Onaiza Maqbool, Hamid Abdul Basit, Muddassar Azam Sindhu, Katsuro Inoue, "Historical Perspective of Clone Refactorings in Evolving Software", PLOS one, Vol 17(12), 2022 </li>
+                    <li>Iram Tariq, Muddassar Azam Sindhu, Rabeeh Ayaz Abbasi, Akmal Saeed Khattak, Onaiza Maqbool, Ghazanfar Farooq Siddiqui, "Resolving cross-site scripting attacks through genetic algorithm and reinforcement learning", Expert System with Applications, 2020</li>
+                    <li>Aroosa Hameed, Mohammad Usman, Onaiza Maqbool, "Privacy Preserved Ranking of Industrial Sensing Services Using Topological Information" IEEE Transactions on Industry Applications, doi: 10.1109/TIA.2020.2981563, 2020</li>
+                    <li>Jaweria Kanwal, Onaiza Maqbool, Hamid Abdul Basit, Muddassar Azam Sindhu, "Evolutionary Perspective of Structural Clones in Software", IEEE Access 7: 58720-58739, 2019</li>
+                    <li>Zafar Saeed, Rabeeh Ayaz Abbasi, Imran Razzak, Onaiza Maqbool, Guandong Xu, "Enhanced Heartbeat Graph for emerging event detection on Twitter using time series networks", Expert System with Applications, Vol 136:115-132, 2019 </li>
+                    <li>Zafar Saeed, Rabeeh Ayaz Abbasi, Onaiza Maqbool, Abida Sadaf, Imran Razzak, Ali Daud, Naif R. Aljohani, Guandong Xu "What's Happening Around the World? A Survey and Framework on Event Detection Techniques on Twitter", Journal of Grid Computing, 17(2):279-312, 2019</li>
+                    <li>Rashid Naseem, Mustafa Bin Mat Deris, Onaiza Maqbool, Sara Shahzad, "Euclidean space based hierarchical clusterers combinations: an application to software clustering", Cluster Computing – The Journal of Networks, Software Tools and Applications, Vol 22:7287-7311, 2019</li>
+                    <li>Anwar Said, Rabeeh Ayaz Abbasi, Onaiza Maqbool, Ali Daud, Naif Radi Aljohani, "CC-GA: A clustering coefficient based genetic algorithm for detecting communities in social networks", Applied soft computing, Vol 63:59-70, 2018</li>
+                    <li>Rabeeh Ayaz Abbasi, Onaiza Maqbool, Mubashar Mushtaq, Naif R. Aljohani, Ali Daud, Jalal S. Alowibdi, Basit Shahzad, "Saving Lives Using Social Media: Analysis of the Role of Twitter for Personal Blood Donation Requests and Dissemination", Telematics and Informatics (Elsevier-Netherlands) Available online 3 February 2017, ISSN 0736-5853, http://dx.doi.org/10.1016/j.tele.2017.01.010</li>
+                    <li>M. Aslam Jarwar, Rabeeh Ayaz Abbasi, Mubashar Mushtaq, Onaiza Maqbool, Naif R. Aljohani, Ali Daud, Jalal S. Alowibdi,  J.R. Cano, S. García, Ilyoung Chong, "CommuniMents: A Framework for Detecting Community Based Sentiments for Events",  International Journal on Semantic Web and Information Systems (IJSWIS) USA , 13(2), 2017</li>
+                    <li>Muhammad Ali Masood, Rabeeh Ayaz Abbasi, Onaiza Maqbool, Mubashar Mushtaq, Naif R. Aljohani, Ali Daud, Muhammad Ahtisham Aslam, Jalal S. Alowibdi, "MFS-LDA: a multi-feature space tag recommendation model for cold start problem" Program: electronic library and information systems (renamed to Data Technologies and Applications), 51(3): 218-234, 2017</li>
+                    <li>Rashid Naseem, Mustafa Bin Mat Deris, Onaiza Maqbool, Jing-peng Li, Sara Shahzad, Habib Shah, "Improved binary similarity measures for software modularization", Frontiers of Information Technology &amp; Electronic Engineering (China), 18(8): 1082-1107, 2017</li>
+                    <li>Maryam Hamdani, Onaiza Maqbool, Jaweria Kanwal, "Supervised Learning for Orphan Adoption Problem in Software Architecture Recovery", Malaysian Journal of Computer Science (Malaysia), 29(4):287-313, 2016</li>
+                    <li>Aakash Ahmed, Claus Pahl, Fawad Khaliq, Onaiza Maqbool, Pooyan Jamshidi, "Exploiting patterns and tool support for reusable and automated change support for software architectures", International Journal of Software Engineering (Eygpt), 9(1):35-58, January 2016</li>
+                    <li>Rashid Naseem, Onaiza Maqbool, Siraj Muhammad, "Cooperative Software Clustering", Journal of Systems and Software (USA), 86(8):2045-2062, August 2013</li>
+                    <li>Faiza Siddique, Onaiza Maqbool, "Enhancing Comprehensibility of Software Clustering Results", IET Software (England), 6(4):283-295, August 2012 </li>
+                    <li>Siraj Muhammad, Onaiza Maqbool, Abdul Qudus Abbasi, "Evaluating Relationship Categories for Clustering Object-Oriented Software Systems", IET Software (England), 6(3):260-274, June 2012</li>
+                    <li>Jaweria Kanwal and Onaiza Maqbool, "Bug Prioritization to Facilitate Bug Report Triage", Journal of Computer Science and Technology (China), 27(2):397-412, March 2012 </li>
+                    <li>M. Sarwar, O. Maqbool, The RSO Algorithm for Reducing Number of Set Operations in Association Rule Mining, Lecture Notes in Artificial Intelligence (Germany), 5139:460-468, October 2008</li>
+                    <li>O.Maqbool, H.A.Babri, "Hierarchical Clustering for Software Architecture Recovery", IEEE Transactions on Software Engineering (USA), 33(11):759-780, November 2007</li>
+                    <li>M. A. Qureshi, O. Maqbool, "The Complexity of Teaching Computability and Complexity", INTI Journal Special Issue on Teaching and Learning (Malaysia), 2007</li>
+                    <li>O.Maqbool, H.A.Babri, "Automated Software Clustering: An Insight using Cluster labels", Journal of Systems and Software (USA), 79(11):1632-1648, November 2006</li>
+                    <li>O.Maqbool, H.A.Babri, A. Karim and S.M. Sarwar, "Metarule-Guided Association Rule Mining for Program Understanding", IEE Software (England), 152(6):281-296, December 2005</li>
+                </ol>
+                <h5 class="text-xl font-semibold my-3">Conference</h5>
+                <ol class="list-decimal pl-6 space-y-2">
+                    <li>Jaweria Kanwal, Hamid Abdul Basit, Onaiza Maqbool, "Structural clones: An evolution perspective",  International workshop on software clones – in conjunction with the International Conference on Software Analysis, Evolution and Re-engineering, Mar  2018</li>
+                    <li>Jaweria Kanwal, Katsuro Inoue and Onaiza Maqbool, "Refactoring Patterns Study in Code Clones during Software Evolution", International workshop on software clones – in conjunction with the International Conference on Software Analysis, Evolution and Re-engineering, Feb 2017</li>
+                    <li>Jaweria Kanwal, Onaiza Maqbool, Rabeeh Ayaz Abbasi and Abdul Qudus Abbasi, "Network Analysis of Software Change History for Understanding Software Evolution", In Proc. of the International Multi-topic Conference, Dec 2014</li>
+                    <li>Rashid Naseem, Bin Mat Deris and Onaiza Maqbool, "Software Modularization using Combination of Multiple Clustering", In Proc. of the International Multi-topic Conference, Dec 2014</li>
+                    <li>Farzana Gul and Onaiza Maqbool, "Structural Clone Detection with Hierarchical Clustering", Intl. Conference on Modern Communication and Computing Technologies, February 2014</li>
+                    <li>Imran Zahoor,  Web Application fact extractor (WAFE). In Proc. of the Intl. Conference on Digital Information Management, September 2013: 379-384</li>
+                    <li>Maryam Bibi and Onaiza Maqbool, "Version Information Support for Software Architecture Recovery", In Proc. of the International Conference on Emerging Technologies, September 2011 </li>
+                    <li>Faiza Siddique and Onaiza Maqbool, "Analyzing Term Weighting Schemes for Labeling Software Clusters", In Proc. of the Conference on Software Maintenance and Re-engineering (CSMR), March 2011 </li>
+                    <li>Rashid Naseem, Onaiza Maqbool and Siraj Muhammad, Improved Similarity Measures For Software Clustering, In Proc. of the Conference on Software Maintenance and Re-engineering (CSMR), March 2011</li>
+                    <li>Jaweria Kanwal, Onaiza Maqbool, Managing Open Bug Repositories through Bug Report Prioritization Using SVMs, In Proc. of the International Conference on Open-Source Systems and Technologies, December 2010</li>
+                    <li>Jehangir Ashraf Awan, Onaiza Maqbool, "Application of Artificial Neural Networks for Monsoon Rainfall Prediction", In Proc. of the International Conference on Emerging Technologies, October 2010</li>
+                    <li>Mohammad Siraj, Onaiza Maqbool, Abdul Qudus Abbasi, Role of Relationships during Clustering of Object-Oriented Software Systems, In Proc. of the International Conference on Emerging Technologies, October 2010 </li>
+                    <li>Rashid Naseem, Onaiza Maqbool, An Improved Similarity Measure for Binary Features in Software Clustering, In Proc. of the International Conference on Computational Intelligence, Modelling and Simulation, September 2010 </li>
+                    <li>Imran Hassan, Onaiza Maqbool, Qaisar Ahsan, Usman Qayyum "Cascading Neural Network with Adaboost for Face Detection", In Proc. of the International Conference on Applied Sciences and Technology, January 2010 </li>
+                    <li>Shafqat Ali, O. Maqbool, Monitoring Software Evolution using Multiple Types of Changes, In Proc. of the IEEE International Conference on Emerging Technologies, October 2009 </li>
+                    <li>O.Maqbool, H.A.Babri, "Bayesian Learning for Software Architecture Recovery", In Proc. of the International Conference on Electrical Engineering, pp. 1-6, April 2007</li>
+                    <li>O.Maqbool, H.A.Babri, "A Stability Analysis of Clustering Algorithms", In Proc. of the International Multi-topic Conference, pp. 314-319, December 2006</li>
+                    <li>O.Maqbool, H.A.Babri, "Interpreting Clustering Results through Cluster Labeling", In Proc. of the IEEE International Conference on Emerging Technologies, pp. 429-434, September 2005</li>
+                    <li>O.Maqbool, A. Karim, H.A.Babri and S.M. Sarwar, "Reverse Engineering using Association Rules", In Proc. of the International Multi-topic Conference, pp. 389-395, December 2004</li>
+                    <li>O.Maqbool, H.A.Babri, "The Weighted Combined Algorithm: A Linkage Algorithm for Software Clustering", In Proc. of the Conference on Software Maintenance and Re-engineering (CSMR), pp. 15-24, March 2004</li>
+                    <li>M.Saeed, O.Maqbool, H.A.Babri, S.M. Sarwar and S.Z. Hassan, "Software Clustering Techniques and the Use of the Combined Algorithm", In Proc. of the Conference on Software Maintenance and Re-engineering (CSMR), pp. 301-306, March 2003</li>
+                </ol>
+
+                <h1 class="text-3xl font-bold text-primary my-6" id="Projects">Funded Projects</h1>
+                <ol class="list-decimal pl-6 space-y-2">
+                    <span>Co-PI for the following projects:</span>
+                    <li>Design and Analysis of Web Services Ranking Methods for the Internet of Thing, Rs. 0.47 million, 01 year</li>
+                    <li>Code Vulnerability Scanner for C Language, Rs. 0.15 million 6 months</li>
+                    <li>Code Vulnerability Scanner for Java Language, Rs. 0.15 million, 6 months</li>
+                    <li>Data Leak Prevention, Rs. 0.15 million, 6 months</li>
+                    <li>Optimizing Model Inference and Coverage for Learning-based Testing (OMICoLT), Rs. 2.1 Million, 03 years </li>
+                    <li>Java Vulnerability Scanner 2, Rs 0.10 Million, 01 year </li>
+                    <li>C Vulnerability Scanner 2, Rs 0.10 Million, 01 year</li>
+                    <li>Data Leak Prevention 2, Rs 0.15, 01 year </li>
+                    <li>Intelligent Testing user LBT, Rs 0.10 Million, 01 year </li>
+                </ol>
+
+                <h2 class="text-2xl font-bold text-secondary my-6" id="PhD_Students">PhD Students</h2>
+                <ol class="list-decimal pl-6 space-y-2">
+                    <li>Jaweria Kanwal, "Understanding Software Evolution through Clones Analysis" <a href="https://github.com/j-kanwal/ClonSAGe" class="text-accent hover:underline"> (Related material can be found here) </a></li>
+                </ol>
+                <h3 class="text-xl font-semibold my-3">Under Supervision</h3>
+                <ol class="list-decimal pl-6 space-y-2" start="2">
+                    <li>Arjumand Fatima</li>
+                    <li>Abdul Quddus Abbasi</li>
+                </ol>
+
+                <h4 class="text-xl font-semibold my-3" id="MPhil_Theses_Supervised">MPhil/MS Theses Supervised</h4>
+                <ol class="list-decimal pl-6 space-y-2">
+                    <li>Hazrat Ubaid Jadoon, Code Generation and Retrieval for Numerical and Statistical Problems in Matlab, 2023 </li>
+                    <li>Samra Mehboob, Automated Program Repair: A Comparison of Token Based and Tree Based Approaches, 2022 </li>
+                    <li>Wasim Zaman, Source-Code Comment Generation with Deep Learning and Word Embeddings, 2021 </li>
+                    <li>Sundas Rana, Sarcasm Detection from Urdu Textual Data Using Deep Learning, 2021 </li>
+                    <li>Aftab Rashid, Deep Learning for Pneumonia Detection on Chest X-rays, 2019 </li>
+                    <li>Khawaja Bilal, Testing of Clustering Algorithms Using Metamorphic Relations, 2019 </li>
+                    <li>Maryam Javed, Discovering Useful Patterns in Relationships Between Bugs and Vulnerabilities Using Mining Techniques, 2018 </li>
+                    <li>Farooq Zaman, Deep Learning Based Part of Speech Tagging for Pashto, 2018 </li>
+                    <li>Aqib Javed, A Fault Localization Approach Based on Bug and Commit History, 2018 </li>
+                    <li>Warda Kanwal, Software Fault Type Classification Using Bug Reports, 2017 </li>
+                    <li>Memoona Zia, Predicting Software Source Code Change Categories using Co-Changed File Sets, 2017 </li>
+                    <li>M. Noman Aslam, Exploring Unsupervised Learning for Feature Location in Software, 2016 </li>
+                    <li>Zeeshan Shahid, Concept Identification based on Neural Networks and Fuzzy Representation of Narratives, 2015 </li>
+                    <li>Fawad Khaliq, Software Architectural Evolution Framework by Unifying Styles and Patterns, 2014 </li>
+                    <li>Tamkeen Razzaq, Investigating Design Pattern Evolution  in Open-Source Software Systems, 2013  </li>
+                    <li>Farzana Gul, Detection of Innovative Structural Clones with the support of hierarchical clustering , 2013  </li>
+                    <li>Maryam Bibi, Addressing the orphan adoption problem in software architecture using supervised learning, 2012 </li>
+                    <li>Imran Zahoor, Reverse Engineering of Web Applications using hierarchical clustering, 2012 </li>
+                    <li>Rashid Naseem, Using cooperative clustering for software modularization, 2011 </li>
+                    <li>Faiza Siddique, Enhancing Comprehensibility of Software Clustering Results, 2011 </li>
+                    <li>Jaweria Kanwal, Prioritization of Bugs to Facilitate Bug Report Triaging, 2011 </li>
+                    <li>Siraj Muhammad, Experimental Evaluation of Relationships for the Modularization of Object Oriented Software Systems, 2010 </li>
+                    <li>Imran Hassan, Evaluating Ensemble Classifiers for Human Face Detection, 2009 </li>
+                    <li>Sibgha Ali, Exploring Bug Repositories for Effective Software Maintenance, 2009 </li>
+                    <li>Saddam Hussain, Using k-means clustering for program comprehension, 2009 </li>
+                    <li>Shafqat Ali, Investigating the Lehman's Laws of Software Evolution for Libre Software, 2009 </li>
+                    <li>Abida Sadaf, Software Change Size Prediction to Support Project Planning, 2009 </li>
+                    <li>Muhammad Sarwar, Association Rule Mining: Enhancing Various Aspects, 2008 </li>
+                    <li>Abdul Quddus Abbasi, Application of Appropriate Machine Learning Techniques for Automatic Modularization of Software Systems, 2008 </li>
+                </ol>
+
+                <h5 class="text-xl font-semibold my-3" id="MSc_Projects_Supervised (Since 2010)">BS/MSc Projects Supervised (Since 2010)</h5>
+                <ol class="list-decimal pl-6 space-y-2">
+                    <li>Bilal Bashir, Deep Learning Based Part of Speech Tagger, 2019 </li>
+                    <li>Wajahat Ali, Othello Via Artificial Intelligence Techniques, 2019 </li>
+                    <li>Ishtiaq Ismail, MadadGaar - Emergency App, 2019 </li>
+                    <li>Muhammad Usman, Landmark Recognition Via Machine Learning Android Based Mobile Application, 2018 </li>
+                    <li>Noor-ul-Huda, Author Recognizer, 2018 </li>
+                    <li>Farhad Ahmed, Mining newspaper articles for interesting relationships, 2018 </li>
+                    <li>Umamah Aqeel, SNAP ATTACK Android based Word Game (Urdu Version), 2018 </li>
+                    <li>M. Awais Rashid, SMS Organizer, 2018 </li>
+                    <li>Shabeeb Naveed, MPhil/MS Theses Organizer, 2018 </li>
+                    <li>Arfa Batool, Fill the Word (Urdu) - An Android Gaming Application, 2017 </li>
+                    <li>Amna Anjum, Ant Colony Optimization Algorithm Simulator, 2017 </li>
+                    <li>Nadia Sultan, Automatic coloring of flowers, 2017 </li>
+                    <li>Javaria Naeem, Calligraphic Style Recognizer, 2017 </li>
+                    <li>Arsalan Raza, Analyzer System for QAU Website, 2016 </li>
+                    <li>Noman Shoukat, NECTCA: Newspaper Columns Topic Classifier Application, 2016 </li>
+                    <li>Riffat Yaqoob, PCAM: A Project Coordination System, 2016 </li>
+                    <li>Shumaila Akram, Conference Event Alert System, 2016 </li>
+                    <li>Sobia Zafar, Paper Publication Trend in Universities, 2016 </li>
+                    <li>Raza Abid Abbasi, Academic Organizer, 2015 </li>
+                    <li>Saffa Shuja, Software Architecture Modeling, 2015 </li>
+                    <li>Usman Mohiyuddin, Urdu Word Game, 2015 </li>
+                    <li>Anum Zehra, Flora Enroute Android Application, 2015 </li>
+                    <li>M. Usman Atif, Smart SMS Organizer, 2015 </li>
+                    <li>M. Waqar, Feel Free Android Application, 2015 </li>
+                    <li>Anila, Viewing Change History of Design Patterns, 2015 </li>
+                    <li>Amir Habib, Cnsode Clone Detection, 2015 </li>
+                    <li>Farah Shafique, Uncovering Interesting Relationships in Text using Mining, 2014 </li>
+                    <li>Namra Nazir, Flora Enroute, 2014 </li>
+                    <li>Naveed Yousaf, Urdu Word Search Game, 2013 </li>
+                    <li>M. Rohail Javaid, Centralized Information System of Fighter Aircrafts, 2013 </li>
+                    <li>Asma Babar, Quranic Arabic Learning Tutorial and Dictionary, 2013 </li>
+                    <li>Sabah Qayyum, Inventory Management of Bakery Products, 2013 </li>
+                    <li>Adeela Younas, Quranic Flora, 2013 </li>
+                    <li>Noorulain, Optical Mark Recognizer for QAU Entry Test Checking, 2012 </li>
+                    <li>Ayesha Majeed, Atlas of Holy Texts, 2012 </li>
+                    <li>Madiha Kiran, D-Scraper – Interesting Reading of Data Extracted from Dbpedia, 2012 </li>
+                    <li>Umar Daraz, Online Urdu Scrabble, 2012 </li>
+                    <li>Kanwal Kiani, Connect-4 Game, 2012 </li>
+                    <li>Sulayman Ali, QAU Departmental SMS Notification System, 2012 </li>
+                    <li>Saba Tabassum, Hierarchical Clustering Results Comparator, 2011 </li>
+                    <li>Saad Akbar, Windows Extended File Explorer, 2011 </li>
+                    <li>Aneela Altaf, Project Report Classifier, 2011 </li>
+                    <li>Adeel Shaukat, Project Monitoring Software, 2011 </li>
+                    <li>Mohsin Azeem, Code Inspector, 2010 </li>
+                    <li>Waseem Ahmed, Object-oriented Analysis and Design Documentation Tool, 2010 </li>
+                    <li>Khalid Khan, Identifying Important Bug Attributes for Bug Severity Clustering, 2010 </li>
+                    <li>Rehman Adeel, Source Code Facts Visualizer, 2010 </li>
+                    <li>M. Zahid Riaz, Improving Bug Severity Classification using Ensembles, 2010 </li>
+                    <li>Rizwan Ahmed, Predicting Growth of a Software System, 2010 </li>
+                </ol>
+            </div>
+            <div class="md:w-1/5">
+                <img alt="Profile Picture" src="onaiza.png" class="w-full rounded-lg shadow-md"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="bg-primary text-white p-6">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-1">
+                <h1 class="text-xl font-bold mb-4">Useful links</h1>
+                <div class="mb-4">
+                    <a href="http://www.qau.edu.pk/" target="QAU" class="footer-label">QAU</a>
+                    <a href="admissions.php" class="footer-label">Admissions</a>
+                    <a href="contactUs.php" class="footer-label">Contact</a>
+                </div>
+                <address class="not-italic">
+                    <strong> Department of Computer Sciences,</strong> <br/>
+                    <strong>Quaid-i-Azam University,</strong> <br/>
+                    Islamabad, 45320, Pakistan <br/>
+                    Tel : +92 (051) 9064-2057
+                </address>
+            </div>
+            <div class="md:col-span-1">
+                <h2 class="text-xl font-bold mb-4">Our Programs</h2>
+                <ul class="space-y-1">
+                    <li><a href="Phd.php" class="hover:underline">PhD (Computer Science)</a></li>
+                    <li><a href="ms.php" class="hover:underline">MS (Information Science &amp; Technology)</a></li>
+                    <li><a href="mphil.php"class="hover:underline">MPhil (Computer Science)</a></li>
+                    <li><a href="ms-ds.php" class="hover:underline">MS (Data Science)</a></li>
+                    <li><a href="Bs.php" class="hover:underline">BS (Computer Science)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="bg-primary text-white text-center p-4">
+        2025 © Department of Computer Sciences, QAU, Islamabad
+    </footer>
+</div>
+</body>
+</html>
